@@ -61,5 +61,6 @@ while (czyKontynuowac)
         default:
             Console.WriteLine("Nie ma takiej operacji, sprobuj ponownie");
             break;
+
     }
 }
