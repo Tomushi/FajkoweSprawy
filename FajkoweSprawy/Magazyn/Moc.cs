@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FajkoweSprawy.Magazyn
 {
-    internal class Fajka
+    public class Moc
     {
     }
 }

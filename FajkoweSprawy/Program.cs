@@ -1,5 +1,8 @@
 ﻿// See https:/// Coś tu trzeba wymyślić ...
 
+using FajkoweSprawy.Magazyn;
+using System.Diagnostics.Metrics;
+
 Magazyn maga = new Magazyn();
 
 bool czyKontynuowac = true;
@@ -21,7 +24,42 @@ while (czyKontynuowac)
         case "1":
             Console.WriteLine("Wpisz nazwe i wcisnij Enter");
             string nazwa = Console.ReadLine();
-            Console.WriteLine("Wbierz moc tytoniu");
+            Console.WriteLine("Moc tytoniu");
+            Console.WriteLine("1. Lekki");
+            Console.WriteLine("2. Sredni");
+            Console.WriteLine("3. Mocny");
             string moc = Console.ReadLine();
+            
+            
+            switch (moc)
+            { case "1":
+                    Console.WriteLine("Wybierz moc tytoniu i wcisnij Enter");
+                    Console.WriteLine("Lekka moc, potwierdz Enterem");
+                    string lekki = Console.ReadLine();
+                    break;
+                case "2":
+                    Console.WriteLine("Srednia moc, potwierdz Enterem");
+                    string sredni = Console.ReadLine();
+                    break;
+                case "3":
+                    Console.WriteLine("Mocny, potwierdz Enterem");
+                    string mocny = Console.ReadLine();
+                    break;
+                                        
+            }
+            Tyton tyton = new Tyton(tyton);
+            break;
+
+        case "2":
+            maga.WyswietlTytonie();
+            break;
+        case "3":
+            czyKontynuowac = false;
+            Console.WriteLine("Zamykam program");
+            break;
+
+        default:
+            Console.WriteLine("Nie ma takiej operacji, sprobuj ponownie");
+            break;
     }
 }

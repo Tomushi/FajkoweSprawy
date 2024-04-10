@@ -8,5 +8,15 @@ namespace FajkoweSprawy.Magazyn
 {
     internal class Tyton
     {
+        internal string Nazwa { get; set; }
+        internal string Moc { get; set; }
+
+        internal Tyton(string nazwa, string moc)
+        { Nazwa = nazwa; Moc = moc; }
+
+        public void WyswietlInformacjeOTytoniu()
+        {
+            Console.WriteLine($"Nazwa: {nazwa}, Moc: {moc});
+        }
     }
 }
