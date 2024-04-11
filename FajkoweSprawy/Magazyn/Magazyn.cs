@@ -20,7 +20,7 @@ namespace FajkoweSprawy.Magazyn
         {
             if (tytonie.Count ==0)
             {
-                Console.WriteLine("Najpierw musisz miec wpisany jakis tyton aby go wyswietlic"); ")
+                Console.WriteLine("Najpierw musisz miec wpisany jakis tyton aby go wyswietlic");
                     return;
             }
 
