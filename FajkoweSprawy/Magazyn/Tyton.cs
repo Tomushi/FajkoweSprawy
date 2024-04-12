@@ -16,7 +16,7 @@ namespace FajkoweSprawy.Magazyn
 
         public void WyswietlInformacjeOTytoniu()
         {
-            Console.WriteLine($"Nazwa: {nazwa}, Moc: {moc});
+            Console.WriteLine($"Nazwa: {Nazwa}");
         }
     }
 }

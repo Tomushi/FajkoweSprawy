@@ -1,6 +1,4 @@
-﻿// See https:/// Coś tu trzeba wymyślić ...
-
-using FajkoweSprawy.Magazyn;
+﻿using FajkoweSprawy.Magazyn;
 using System.Diagnostics.Metrics;
 
 Magazyn maga = new Magazyn();
@@ -29,27 +27,7 @@ while (czyKontynuowac)
             Console.WriteLine("2. Sredni");
             Console.WriteLine("3. Mocny");
             string moc = Console.ReadLine();
-            
-            
-            switch (moc)
-            { case "1":
-                    Console.WriteLine("Wybierz moc tytoniu i wcisnij Enter");
-                    Console.WriteLine("Lekka moc, potwierdz Enterem");
-                    string lekki = Console.ReadLine();
-                    break;
-                case "2":
-                    Console.WriteLine("Srednia moc, potwierdz Enterem");
-                    string sredni = Console.ReadLine();
-                    break;
-                case "3":
-                    Console.WriteLine("Mocny, potwierdz Enterem");
-                    string mocny = Console.ReadLine();
-                    break;
-                                        
-            }
-            Tyton tyton = new Tyton(tyton);
             break;
-
         case "2":
             maga.WyswietlTytonie();
             break;
