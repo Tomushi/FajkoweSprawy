@@ -8,5 +8,6 @@ namespace FajkoweSprawy.Magazyn
 {
     public class Moc
     {
+
     }
 }
