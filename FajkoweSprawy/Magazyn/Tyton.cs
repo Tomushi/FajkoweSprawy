@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ namespace FajkoweSprawy.Magazyn
 
         public void WyswietlInformacjeOTytoniu()
         {
-            Console.WriteLine($"Nazwa: {Nazwa}");
+            Console.WriteLine($"nazwa: {Nazwa}, moc: {Moc}");
         }
     }
 }
