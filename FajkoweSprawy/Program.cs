@@ -1,3 +1,5 @@
+// See https:/// Coś tu trzeba wymyślić ...
+
 using FajkoweSprawy.Magazyn;
 using System.Diagnostics.Metrics;
 
@@ -26,7 +28,6 @@ while (czyKontynuowac)
             Console.WriteLine("1. Lekki");
             Console.WriteLine("2. Sredni");
             Console.WriteLine("3. Mocny");
-
             string Moc = Console.ReadLine();
             
             
@@ -47,10 +48,8 @@ while (czyKontynuowac)
                                         
             }
             
-
-            string moc = Console.ReadLine();
-
             break;
+
         case "2":
             maga.WyswietlTytonie();
             break;
@@ -62,5 +61,6 @@ while (czyKontynuowac)
         default:
             Console.WriteLine("Nie ma takiej operacji, sprobuj ponownie");
             break;
+
     }
 }
