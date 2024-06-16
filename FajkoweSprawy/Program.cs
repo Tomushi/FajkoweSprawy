@@ -1,4 +1,4 @@
-﻿using FajkoweSprawy.Magazyn;
+using FajkoweSprawy.Magazyn;
 using System.Diagnostics.Metrics;
 
 Magazyn maga = new Magazyn();
@@ -26,7 +26,30 @@ while (czyKontynuowac)
             Console.WriteLine("1. Lekki");
             Console.WriteLine("2. Sredni");
             Console.WriteLine("3. Mocny");
+
+            string Moc = Console.ReadLine();
+            
+            
+            switch (Moc)
+            { case "1":
+                    Console.WriteLine("Wybierz moc tytoniu i wcisnij Enter");
+                    Console.WriteLine("Lekka moc, potwierdz Enterem");
+                    string lekki = Console.ReadLine();
+                    break;
+                case "2":
+                    Console.WriteLine("Srednia moc, potwierdz Enterem");
+                    string sredni = Console.ReadLine();
+                    break;
+                case "3":
+                    Console.WriteLine("Mocny, potwierdz Enterem");
+                    string mocny = Console.ReadLine();
+                    break;
+                                        
+            }
+            
+
             string moc = Console.ReadLine();
+
             break;
         case "2":
             maga.WyswietlTytonie();
